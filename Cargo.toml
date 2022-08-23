@@ -7,6 +7,6 @@ version = "0.1.0"
 crate-type = ["cdylib"]
 
 [dependencies]
-wasm-bindgen = "0.2"
+wasm-bindgen = {version = "0.2", features = ["xxx_debug_only_print_generated_code"]}
 wasm-bindgen-futures = "0.4"
 web-sys = {version = "0.3", features = ["CryptoKey"]}
