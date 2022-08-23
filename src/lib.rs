@@ -25,8 +25,8 @@ struct Did {
 
 #[wasm_bindgen]
 impl Did {
-    #[wasm_bindgen]
-    pub async fn create() -> Result<Did> {
+    #[wasm_bindgen(constructor)]
+    pub async fn new() -> Result<Did> {
         Err(Error::SomethingWentWrong)
     }
 
